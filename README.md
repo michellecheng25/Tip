@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Implemented dark mode
-- [x] Added a reset button so the user doesn't have to delete input
+- [x] Added a reset button to delete input
 
 ## Video Walkthrough
 ![](https://i.imgur.com/S9snuf2.gif)
