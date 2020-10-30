@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,8 +45,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9M-4b-rU5">
-                                <rect key="frame" x="20" y="431" width="37" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9M-4b-rU5">
+                                <rect key="frame" x="20" y="431" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -59,6 +60,7 @@
                                     <segment title="18%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" name="AccentColor"/>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="T4j-FH-j9S"/>
                                 </connections>
@@ -77,6 +79,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Darkmode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOh-bm-oP0">
+                                <rect key="frame" x="20" y="528" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="szQ-8B-wl8">
+                                <rect key="frame" x="306" y="518" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="darkAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="65W-dT-fgr"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,9 +103,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tip calculator" id="BCK-M5-6Xn"/>
                     <connections>
+                        <outlet property="billAmountLabel" destination="8N7-Dh-87F" id="SwR-34-pdW"/>
                         <outlet property="billField" destination="VG6-Mo-a1x" id="oVh-D3-sws"/>
+                        <outlet property="darkLabel" destination="pOh-bm-oP0" id="ewE-k6-oZX"/>
+                        <outlet property="outletSwitch" destination="szQ-8B-wl8" id="dLf-vz-klH"/>
+                        <outlet property="tipAmountLabel" destination="ekV-1Y-hQz" id="iSt-rA-Skp"/>
                         <outlet property="tipControl" destination="ebU-bD-Gv8" id="xs5-ld-sQk"/>
                         <outlet property="tipLabel" destination="DNZ-6Y-zxD" id="jnX-us-lRW"/>
+                        <outlet property="totalCostLabel" destination="z9M-4b-rU5" id="Oob-Gk-Yu0"/>
                         <outlet property="totalLabel" destination="HNR-EJ-f87" id="GAS-nc-hMP"/>
                     </connections>
                 </viewController>
@@ -122,6 +143,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
