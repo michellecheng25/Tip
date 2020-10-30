@@ -24,6 +24,7 @@ The following **additional** features are implemented:
 
 - [x] Implemented dark mode
 - [x] Added a reset button to delete input
+- [x] Added a LaunchScreen
 
 ## Video Walkthrough
 ![](https://i.imgur.com/S9snuf2.gif)
