@@ -4,7 +4,7 @@ Tip is a tip calculator application for iOS.
 
 Submitted by: Michelle Cheng
 
-Time spent: 3 hours spent in total
+Time spent: 4 hours spent in total
 
 ## User Stories
 
@@ -26,17 +26,13 @@ The following **additional** features are implemented:
 - [x] Added a reset button so the user doesn't have to delete input
 
 ## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-![](https://i.imgur.com/1mkzz1K.gif)
+![](https://i.imgur.com/S9snuf2.gif)
 
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [Ezgif](https://ezgif.com/).
 
 ## Notes
-
-Describe any challenges encountered while building the app.
+N/A
 
 ## License
 
