@@ -28,8 +28,7 @@ The following **additional** features are implemented:
 * [x] implemented a splitting feature
 
 ## Video Walkthrough
-![](https://i.imgur.com/S9snuf2.gif)
-
+![](https://i.imgur.com/qM4e39S.gif)
 
 GIF created with [Ezgif](https://ezgif.com/).
 
