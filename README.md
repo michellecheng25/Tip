@@ -22,10 +22,10 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Implemented dark mode
-- [x] Added a reset button to delete input
-- [x] Added a LaunchScreen
-- [x] implemented a splitting feature
+* [x] Implemented dark mode
+* [x] Added a reset button to delete input
+* [x] Added a LaunchScreen
+* [x] implemented a splitting feature
 
 ## Video Walkthrough
 ![](https://i.imgur.com/S9snuf2.gif)
