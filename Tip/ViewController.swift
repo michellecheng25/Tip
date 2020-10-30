@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var darkLabel: UILabel!
     @IBOutlet weak var outletSwitch: UISwitch!
+    @IBOutlet weak var resetButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,6 @@ class ViewController: UIViewController {
 
 
     @IBAction func onTap(_ sender: Any) {
-        print("Hello")
         
         view.endEditing(true)
     }
@@ -46,6 +46,12 @@ class ViewController: UIViewController {
         totalLabel.text = String(format:"$%.2f", total)
     }
     
+    @IBAction func resetAction(_ sender: Any) {
+        billField.text = ""
+        tipLabel.text = "$0.00"
+        totalLabel.text = "$0.00"
+        
+    }
     
     @IBAction func darkAction(_ sender: Any) {
         if outletSwitch.isOn == true {
